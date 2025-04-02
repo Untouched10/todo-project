@@ -1,8 +1,9 @@
-const TaskList = ({ todos }) => {
+const TaskList = () => {
   return (
     <div className="mt-5 p-5 bg-white shadow-lg rounded-xl">
       <h2 className="text-xl font-bold mb-3">Task List</h2>
-      <ul>
+      <p className="text-gray-500">No tasks added yet.</p>
+      {/* <ul>
         {todos.length > 0 ? (
           todos.map((task, index) => (
             <li key={index} className="p-2 border-b">
@@ -10,9 +11,9 @@ const TaskList = ({ todos }) => {
             </li>
           ))
         ) : (
-          <p className="text-gray-500">No tasks added yet.</p>
+          
         )}
-      </ul>
+      </ul> */}
     </div>
   );
 };
